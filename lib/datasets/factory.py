@@ -10,6 +10,8 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
+import os
+os.path.join('/opt/ocr/Image_manipulation_detection/')
 __sets = {}
 from lib.datasets.pascal_voc import pascal_voc
 from lib.datasets.coco import coco
@@ -51,3 +53,6 @@ def get_imdb(name):
 def list_imdbs():
     """List all registered imdbs."""
     return list(__sets.keys())
+
+if __name__ =='__main__':
+    print(__sets)
